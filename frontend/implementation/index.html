@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top-group">
+            <img src="../assets/unilectives.svg" alt="Unilectives Logo" class="centered-image">
+            <img src="../assets/book-open.svg" alt="book-open" class="centered-image">
+            <img src="../assets/shield-check.svg" alt="shield-check" class="centered-image">
+        </div>
+        <div class="bottom-group">
+            <img src="../assets/user-circle.svg" alt="user-circle" class="bottom-image">
+            <img src="../assets/moon.svg" alt="moon" class="bottom-image">
+            <img src="../assets/exit.svg" alt="exit" class="bottom-image">
+        </div>
+    </div>
+    
+
+<div class="content">
+    <div class="header">
+        <h5 class="sub-heading">Devsoc presents</h5>
+        <h1 class="main-heading"><strong>unilectives</strong></h1>
+        <h5 class="sub-heading"><strong>Your one stop shop for UNSW course and elective reviews</strong></h5>
+        <input type="text" id="search" placeholder="Search for a course e.g. COMP1511">
+    </div>
+
+    <select id="dropdown">
+        <option value="sortBy" selected> Sort by</option>
+        <option value="year"> Year</option>
+        <option value="rating"> Rating</option>
+        <option value="alpha"> Alphabetically</option>
+    </select>
+  
+    <div class="container" id="coursesContainer">
+    <!-- Courses will be dynamically added here -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
